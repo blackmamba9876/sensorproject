@@ -21,6 +21,7 @@ class MainUtils:
         pass
 
 
+# method to open any ML file and read it .
     def read_yaml_file(self, filename: str) -> dict:
         try:
             with open(filename, "rb") as yaml_file:
@@ -31,6 +32,8 @@ class MainUtils:
             raise CustomException(e, sys) from e
 
 
+
+# in mongodb there is a schema so to read the schema
     def read_schema_config_file(self) -> dict:
         try:
             schema_config = self.read_yaml_file(os.path.join("config", "schema.yaml"))
@@ -45,7 +48,7 @@ class MainUtils:
 
    
 
-
+# its a independent methon of main_utils to save  anything , example : to save pickel_file 
     @staticmethod
     def save_object(file_path: str, obj: object) -> None:
         logging.info("Entered the save_object method of MainUtils class")
