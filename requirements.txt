@@ -1,0 +1,3 @@
+pandas 
+numpy
+-e. # trigger the setup.py file up using -e
