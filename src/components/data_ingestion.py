@@ -70,7 +70,7 @@ class DataIngestion:
         logging.info("Entered initiated_data_ingeestion methos of data_ingestion class")
 
         try:
-            feature_store_file_path = self.export_collection_as_dataframe()
+            feature_store_file_path = self.export_data_into_feature_store_file_path()
 
             logging.info("got the data from mongodb")
             logging.info("exited initiated_data_ingestion methods of data ingestion class")
