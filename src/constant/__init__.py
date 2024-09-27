@@ -10,6 +10,7 @@ MONGO_COLLECTION_NAME = "waferfault"
 
 TARGET_COLUMN = "quality"
 MONGO_DB_URL="mongodb+srv://suhas:50456@cluster0.dttdp.mongodb.net/?retryWrites=true&w=majority"
+                
 
 
 MODEL_FILE_NAME = "model"
